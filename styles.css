@@ -1,0 +1,279 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Garamond", serif; /* Elegant, vintage font */
+  background-color: #2a2a2a; /* Dark stone-like background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  color: #e5e5e5; /* Light gray text for readability */
+}
+/* Font Classes */
+body.english-font {
+  font-family: "Garamond", serif; /* Elegant font for English */
+}
+body.arabic-font {
+  font-family: "Cairo", sans-serif; /* Modern font for Arabic */
+}
+/* Right-to-Left (RTL) Direction for Arabic */
+body[dir="rtl"] {
+  direction: rtl; /* Enable RTL direction */
+  text-align: right; /* Align text to the right */
+}
+/* Carousel Container */
+.carousel {
+  width: 100%; /* Full width of the container */
+  max-width: 1000px; /* Max size for larger screens */
+  height: 600px; /* Fixed height for consistency */
+  position: relative;
+  perspective: 1000px; /* Consistent perspective */
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5); /* Depth for carousel */
+  border-radius: 20px; /* Rounded corners for a refined look */
+  margin: auto;
+}
+/* Slider: The rotating container */
+.slider {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  animation: rotate 30s linear infinite;
+  transition: none; /* Pause the rotation when hovered */
+}
+/* Pause the carousel on hover */
+.carousel:hover .slider {
+  animation-play-state: paused; /* Pause carousel rotation on hover */
+}
+/* Slide Styling: Frames with vintage look */
+.slide {
+  position: absolute;
+  width: 200px; /* Fixed width for each slide */
+  height: 400px; /* Fixed height for each slide */
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px; /* Rounded corners for frame */
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7); /* Strong shadow for depth */
+  transition: transform 0.5s ease;
+  backface-visibility: hidden; /* Hide the backface of slides */
+  border: 5px solid #d1b49e; /* Subtle gold border for vintage look */
+  background-color: #3a3a3a; /* Slightly darkened background for contrast */
+  cursor: pointer; /* Make the entire slide clickable */
+}
+/* Hover effect for slides */
+.slide:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+/* Positioning slides evenly in a circular motion */
+.slide:nth-child(1) {
+  transform: rotateY(0deg) translateZ(350px);
+}
+.slide:nth-child(2) {
+  transform: rotateY(32.73deg) translateZ(350px);
+}
+.slide:nth-child(3) {
+  transform: rotateY(65.46deg) translateZ(350px);
+}
+.slide:nth-child(4) {
+  transform: rotateY(98.19deg) translateZ(350px);
+}
+.slide:nth-child(5) {
+  transform: rotateY(130.92deg) translateZ(350px);
+}
+.slide:nth-child(6) {
+  transform: rotateY(163.65deg) translateZ(350px);
+}
+.slide:nth-child(7) {
+  transform: rotateY(196.38deg) translateZ(350px);
+}
+.slide:nth-child(8) {
+  transform: rotateY(229.11deg) translateZ(350px);
+}
+.slide:nth-child(9) {
+  transform: rotateY(261.84deg) translateZ(350px);
+}
+.slide:nth-child(10) {
+  transform: rotateY(294.57deg) translateZ(350px);
+}
+.slide:nth-child(11) {
+  transform: rotateY(327.3deg) translateZ(350px);
+}
+/* Smooth looping animation */
+@keyframes rotate {
+  0% {
+    transform: rotateY(0deg); /* Start at 0deg */
+  }
+  99.9% {
+    transform: rotateY(-360deg); /* End just before completing the loop */
+  }
+  100% {
+    transform: rotateY(0deg); /* Reset to start */
+  }
+}
+/* Grayscale effect on visuals for museum-like feel */
+.slide .visual {
+  width: 100%;
+  height: 60%;
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(70%); /* More grayscale for a vintage effect */
+  transition: filter 0.5s ease, transform 0.5s ease;
+}
+.slide:hover .visual {
+  filter: grayscale(0%); /* Full color on hover */
+  transform: scale(1.1); /* Slight zoom effect */
+}
+/* Content area styling with vintage flair */
+.slide .content {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Push content apart */
+  align-items: center;
+  padding: 10px; /* Reduced padding for better spacing */
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent overlay */
+  backdrop-filter: blur(10px); /* Soft blur effect for depth */
+  text-align: center;
+  font-family: "Garamond", serif; /* Elegant font to match museum theme */
+}
+/* Title Styling */
+.slide .content h2 {
+  font-size: 1.2rem; /* Adjusted font size */
+  margin-bottom: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #d1b49e; /* Gold color for titles */
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6); /* Subtle shadow for title */
+}
+/* Description Styling */
+.slide .content p {
+  font-size: 0.8rem; /* Adjusted font size for better fitting */
+  line-height: 2;
+  margin-bottom: 5px;
+  color: #e0e0e0; /* Light gray for better readability */
+  overflow: hidden; /* Prevent text overflow */
+  text-overflow: ellipsis; /* Add ellipsis for long text */
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Limit to 3 lines */
+  -webkit-box-orient: vertical;
+}
+/* Expanded View */
+.expanded-view {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 1000;
+  overflow: auto;
+  display: none;
+}
+.expanded-view.active {
+  display: flex;
+}
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgb(90, 72, 72);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%; /* Circular close button */
+}
+.expanded-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 90%; /* Limit content width */
+}
+.expanded-title {
+  font-size: 2rem; /* Increased font size for better readability */
+  color: #d1b49e;
+  text-align: center;
+  max-width: 80%; /* Limit title width */
+}
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(200px, 1fr)
+  ); /* Ensure images are the same size */
+  gap: 20px;
+  width: 100%;
+}
+.image-gallery img {
+  width: 100%;
+  height: auto;
+  max-height: 300px; /* Set a max height for images */
+  object-fit: contain; /* Ensure image aspect ratio is maintained */
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.image-gallery img:hover {
+  transform: scale(1.05);
+}
+.expanded-description {
+  font-size: 1.2rem; /* Increased text size */
+  line-height: 1.6;
+  color: #e0e0e0;
+  text-align: justify;
+  max-width: 800px; /* Limit the width of the description */
+  padding: 0 10px; /* Add some padding for better text readability */
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .carousel {
+    width: 90vw; /* Slightly smaller for tablets */
+    height: 500px; /* Slightly smaller for tablets */
+  }
+  .slide {
+    width: 200px; /* Fixed width for each slide */
+    height: 400px; /* Fixed height for each slide */
+  }
+  .expanded-view {
+    max-width: 95vw;
+    max-height: 85vh;
+  }
+  .expanded-title {
+    font-size: 1.5rem;
+  }
+  .expanded-description {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 480px) {
+  .carousel {
+    width: 95vw; /* Smaller width for mobile */
+    height: 450px; /* Smaller height for mobile */
+  }
+  .slide {
+    width: 160px; /* Fixed width for each slide */
+    height: 360px; /* Fixed height for each slide */
+  }
+  .expanded-title {
+    font-size: 1.2rem;
+  }
+  .expanded-description {
+    font-size: 1rem;
+  }
+}

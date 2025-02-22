@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/img/Saudi_Founding_Day_Logo.png" />
+
+    <title>Saudi Arabia's History Carousel</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Cairo&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Language Selector -->
+    <div
+      class="language-selector"
+      style="position: absolute; top: 10px; right: 10px"
+    >
+      <button
+        id="langToggle"
+        class="lang-btn"
+        data-lang="ar"
+        style="
+          padding: 5px 10px;
+          border-radius: 5px;
+          cursor: pointer;
+          background-color: #d1b49e;
+          color: #2a2a2a;
+        "
+      >
+        AR
+      </button>
+    </div>
+
+    <main>
+      <!-- Carousel Container -->
+      <div class="carousel">
+        <div class="slider">
+          <!-- Slide for 1930s -->
+          <div class="slide" data-year="1930s">
+            <div
+              class="visual"
+              style="background-image: url('img/1930s/image-1930s.jpg')"
+            ></div>
+            <div class="content">
+              <h2 class="title" data-en="The 1930s" data-ar="الثلاثينات">
+                The 1930s
+              </h2>
+              <p
+                class="description"
+                data-en="The Birth of a Nation and Unification"
+                data-ar="ولادة الأمة وتوحيدها"
+              >
+                The Birth of a Nation and Unification
+              </p>
+            </div>
+          </div>
+
+          <!-- Slide for 1940s -->
+          <div class="slide" data-year="1940s">
+            <div
+              class="visual"
+              style="background-image: url('img/1940s/image-1940s.jpg')"
+            ></div>
+            <div class="content">
+              <h2 class="title" data-en="The 1940s" data-ar="الأربعينات">
+                The 1940s
+              </h2>
+              <p
+                class="description"
+                data-en="Strengthening the Foundations and International Diplomacy"
+                data-ar="تعزيز الأسس والدبلوماسية الدولية"
+              >
+                Strengthening the Foundations and International Diplomacy
+              </p>
+            </div>
+          </div>
+
+          <!-- Slide for 1950s -->
+          <div class="slide" data-year="1950s">
+            <div
+              class="visual"
+              style="background-image: url('img/1950s/image-1950s.jpg')"
+            ></div>
+            <div class="content">
+              <h2 class="title" data-en="The 1950s" data-ar="الخمسينات">
+                The 1950s
+              </h2>
+              <p
+                class="description"
+                data-en="A New Era of Leadership and Regional Power"
+                data-ar="عصر جديد من القيادة والقوة الإقليمية"
+              >
+                A New Era of Leadership and Regional Power
+              </p>
+            </div>
+          </div>
+
+          <!-- Slide for 1960s -->
+          <div class="slide" data-year="1960s">
+            <div
+              class="visual"
+              style="background-image: url('img/1960s/image-1960s.jpg')"
+            ></div>
+            <div class="content">
+              <h2 class="title" data-en="The 1960s" data-ar="الستينات">
+                The 1960s
+              </h2>
+              <p
+                class="description"
+                data-en="Strengthening the Nation and Regional Leadership"
+                data-ar="تعزيز الأمة والقيادة الإقليمية"
+              >
+                Strengthening the Nation and Regional Leadership
+              </p>
+            </div>
+          </div>
+
+          <!-- Slide for 1970s -->
+          <div class="slide" data-year="1970s">
+            <div
+              class="visual"
+              style="background-image: url('img/1970s/image-1970s.jpg')"
+            ></div>
+            <div class="content">
+              <h2 class="title" data-en="The 1970s" data-ar="السبعينات">
+                The 1970s
+              </h2>
+              <p
+                class="description"
+                data-en="Oil Boom and Global Influence"
+                data-ar="طفرة النفط والنفوذ العالمي"
+              >
+                Oil Boom and Global Influence
+              </p>
+            </div>
+          </div>
+
+          <!-- Slide for 1980s -->
+          <div class="slide" data-year="1980s">
+            <div
+              class="visual"
+              style="background-image: url('img/1980s/image-1980s.jpg')"
+            ></div>
+            <div class="content">
+              <h2 class="title" data-en="The 1980s" data-ar="الثمانينات">
+                The 1980s
+              </h2>
+              <p
+                class="description"
+                data-en="Economic Consolidation and Regional Cooperation"
+                data-ar="توطيد الاقتصاد والتعاون الإقليمي"
+              >
+                Economic Consolidation and Regional Cooperation
+              </p>
+            </div>
+          </div>
+
+          <!-- Slide for 1990s -->
+          <div class="slide" data-year="1990s">
+            <div
+              class="visual"
+              style="background-image: url('img/1990s/image-1990s.jpg')"
+            ></div>
+            <div class="content">
+              <h2 class="title" data-en="The 1990s" data-ar="التسعينات">
+                The 1990s
+              </h2>
+              <p
+                class="description"
+                data-en="Gulf War, Regional Stability, and Modernization"
+                data-ar="حرب الخليج، الاستقرار الإقليمي، وعصر التحديث"
+              >
+                Gulf War, Regional Stability, and Modernization
+              </p>
+            </div>
+          </div>
+
+          <!-- Slide for 2000s -->
+          <div class="slide" data-year="2000s">
+            <div
+              class="visual"
+              style="background-image: url('img/2000s/image-2000s.jpg')"
+            ></div>
+            <div class="content">
+              <h2 class="title" data-en="The 2000s" data-ar="الألفينات">
+                The 2000s
+              </h2>
+              <p
+                class="description"
+                data-en="Visionary Leadership and Economic Diversification"
+                data-ar="القيادة المستقبلية وتنويع الاقتصاد"
+              >
+                Visionary Leadership and Economic Diversification
+              </p>
+            </div>
+          </div>
+
+          <!-- Slide for 2010s -->
+          <div class="slide" data-year="2010s">
+            <div
+              class="visual"
+              style="background-image: url('img/2010s/image-2010s.jpg')"
+            ></div>
+            <div class="content">
+              <h2 class="title" data-en="The 2010s" data-ar=" العقد الأول ٢٠١٠">
+                The 2010s
+              </h2>
+              <p
+                class="description"
+                data-en="Progressive Reforms and Global Influence"
+                data-ar="إصلاحات رائدة وتأثير عالمي"
+              >
+                Progressive Reforms and Global Influence
+              </p>
+            </div>
+          </div>
+
+          <!-- Slide for 2020s -->
+          <div class="slide" data-year="2020s">
+            <div
+              class="visual"
+              style="background-image: url('img/2020s/image-2020s.jpg')"
+            ></div>
+            <div class="content">
+              <h2 class="title" data-en="The 2020s" data-ar="العقد الثاني ٢٠٢٠">
+                The 2020s
+              </h2>
+              <p
+                class="description"
+                data-en="Ambitious Projects and Technological Innovation"
+                data-ar="المشاريع الكبرى والابتكار التكنولوجي"
+              >
+                Ambitious Projects and Technological Innovation
+              </p>
+            </div>
+          </div>
+
+          <!-- Slide for 2024 -->
+          <div class="slide" data-year="2024">
+            <div
+              class="visual"
+              style="background-image: url('img/image-2024.jpg')"
+            ></div>
+            <div class="content">
+              <h2 class="title" data-en="Today" data-ar="اليوم">Today</h2>
+              <p
+                class="description"
+                data-en="A Kingdom of Innovation, Progress, and Global Leadership"
+                data-ar="مملكة الابتكار والتقدم والقيادة العالمية"
+              >
+                A Kingdom of Innovation, Progress, and Global Leadership
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Expanded View -->
+      <div class="expanded-view hidden">
+        <button class="close-btn">X</button>
+        <div class="expanded-content">
+          <div class="content-container"></div>
+        </div>
+      </div>
+      <!-- Background Music -->
+      <audio autoplay loop>
+        <source src="background-music.mp3" type="audio/mp3" />
+        Your browser does not support the audio element.
+      </audio>
+
+      <!-- Copyright Notice -->
+      <footer
+        style="
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          font-size: 0.8rem;
+          color: #a0a0a0;
+          text-align: center;
+          padding: 10px 0;
+        "
+      >
+        <span
+          data-en="© 2025 RGD. All rights reserved."
+          data-ar="© 2025 RGD. جميع الحقوق محفوظة."
+        >
+          © 2025 RGD. All rights reserved.
+        </span>
+      </footer>
+
+      <script src="script.js"></script>
+    </main>
+  </body>
+</html>

@@ -37,7 +37,7 @@ A 3D carousel web app celebrating Saudi Arabia’s Foundation Day, showcasing th
 
 
 ## LIVE DEMO 
-https://rgd01sh.github.io/VisionOfTime/
+Check it out **[here](https://rgd01sh.github.io/VisionOfTime/)**  
 
 
 ## Customization

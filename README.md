@@ -57,6 +57,4 @@ Feel free to fork and submit a pull request if you'd like to contribute.
 ## License
 
 This project is open-source under the MIT License.
-```
-
-You can now use **VisionOfTime** for your GitHub project! Let me know if there's anything else you'd like to modify.
+ 

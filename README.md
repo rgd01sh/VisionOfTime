@@ -1,5 +1,5 @@
- 
-# Saudi Foundation Day Carousel
+
+# VisionOfTime 🇸🇦✨
 
 A 3D carousel web app celebrating Saudi Arabia’s Foundation Day, showcasing the history of Saudi Arabia from the 1930s to today.
 
@@ -15,12 +15,12 @@ A 3D carousel web app celebrating Saudi Arabia’s Foundation Day, showcasing th
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/rgd01sh/Saudi-Foundation-Day-Carousel.git
+   git clone https://github.com/rgd01sh/VisionOfTime.git
    ```
 
 2. Navigate to the project directory:
    ```bash
-   cd Saudi-Foundation-Day-Carousel
+   cd VisionOfTime
    ```
 
 3. Open `index.html` in your browser.
@@ -35,7 +35,7 @@ A 3D carousel web app celebrating Saudi Arabia’s Foundation Day, showcasing th
 ## Folder Structure
 
 ```
-Saudi-Foundation-Day-Carousel/
+VisionOfTime/
 ├── index.html
 ├── styles.css
 ├── script.js
@@ -59,4 +59,4 @@ Feel free to fork and submit a pull request if you'd like to contribute.
 This project is open-source under the MIT License.
 ```
 
- 
+You can now use **VisionOfTime** for your GitHub project! Let me know if there's anything else you'd like to modify.

@@ -1,6 +1,4 @@
-Here's the updated `README.md` with your GitHub username:
-
-```markdown
+ 
 # Saudi Foundation Day Carousel
 
 A 3D carousel web app celebrating Saudi Arabia’s Foundation Day, showcasing the history of Saudi Arabia from the 1930s to today.
@@ -61,4 +59,4 @@ Feel free to fork and submit a pull request if you'd like to contribute.
 This project is open-source under the MIT License.
 ```
 
-You can now use this for your GitHub project. Let me know if you need more adjustments!
+ 

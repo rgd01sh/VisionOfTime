@@ -32,17 +32,8 @@ A 3D carousel web app celebrating Saudi Arabia’s Foundation Day, showcasing th
 - JavaScript
 - Google Fonts
 
-## Folder Structure
-
-```
-VisionOfTime/
-├── index.html
-├── styles.css
-├── script.js
-├── img/
-├── background-music.mp3
-└── README.md
-```
+## LIVE DEMO 
+https://rgd01sh.github.io/VisionOfTime/
 
 ## Customization
 

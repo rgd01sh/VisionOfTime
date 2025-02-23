@@ -46,9 +46,6 @@ Check it out **[here](https://rgd01sh.github.io/VisionOfTime/)**
 - Change background music by replacing `background-music.mp3`.
 - Add more slides by editing `index.html` and `script.js`.
 
-## Contributing
-
-Feel free to fork and submit a pull request if you'd like to contribute.
 
 ## License
 This project is open-source under the MIT License.
